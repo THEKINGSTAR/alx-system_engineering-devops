@@ -1,2 +1,2 @@
-#!/bin/bash
-0  --mime-type -m school.mgc *
+0    SCHOOL
+!:mime text/shool
