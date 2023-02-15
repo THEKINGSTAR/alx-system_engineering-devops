@@ -1,0 +1,11 @@
+total 80
+-rwxr--r-- 1 king king   35 Feb 15 03:29 100-decimal_to_hexadecimal
+-rwxr--r-- 1 king king   42 Feb 15 02:23 10-love_exponent_breath
+-rwxr--r-- 1 king king   57 Feb 15 02:52 12-combinations
+-rwxr--r-- 1 king king   30 Feb 14 20:08 1-hello_you
+-rwxr--r-- 1 king king   46 Feb 15 01:06 3-paths
+-rwxr--r-- 1 king king   24 Feb 15 01:27 5-local_variables
+-rwxr--r-- 1 king king   38 Feb 15 01:55 7-create_global_variable
+-rwxr--r-- 1 king king   34 Feb 15 02:11 9-divide_and_rule
+-rw-r--r-- 1 king king  683 Feb 15 03:43 odd_lines
+-rw-r--r-- 1 king king 2202 Feb 14 19:26 README.md
