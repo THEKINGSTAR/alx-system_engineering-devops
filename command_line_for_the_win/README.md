@@ -64,7 +64,7 @@
 
 
 
->- ### THE use of the SFTP (Secure File Transfer Protocol) command-line tool to move local screenshots to the sandbox environment.
+## THE use of the SFTP (Secure File Transfer Protocol) command-line tool to move local screenshots to the sandbox environment.
 >- Here are the steps to follow:
 >- Take the screenshots of the completed levels as mentioned in the general requirements.
 >- Open a terminal or command prompt on local machine.
