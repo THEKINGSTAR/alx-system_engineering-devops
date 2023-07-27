@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This is script to display the every clock hour with its 60 min
-h=1
+h=0
 while [ $h -le 12 ]
 do
 	echo "Hour: $h"
