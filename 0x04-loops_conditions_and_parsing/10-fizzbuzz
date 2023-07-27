@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Bash script that displays numbers from 1 to 100.
+n=1
+while [ $n -le 100 ]
+do
+	if [ $((n % 3)) == 0 ] && [ $((n % 5)) == 0 ] 
+	then
+	echo "FizzBuzz"
+	((n++))
+	elif [ $((n % 3)) == 0 ]
+	then
+	echo "Fizz"
+	((n++))
+	elif [ $((n % 5)) == 0 ]
+	then
+	echo "Buzz"
+	((n++))
+	else
+	echo "$n"
+	((n++))
+	fi
+done

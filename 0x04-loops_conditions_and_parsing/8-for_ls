@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is displaying the dirictory content after the first dash
+ls_dir="$(ls)"
+for i in "$ls_dir"
+do
+	echo "$i"
+done
