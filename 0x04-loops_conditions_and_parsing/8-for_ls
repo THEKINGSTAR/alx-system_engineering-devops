@@ -3,5 +3,6 @@
 ls_dir="$(ls)"
 for i in $ls_dir
 do
-	echo "$i"
+	name=$(echo "$i" | cut -d '-' -f 2-)
+	echo "$name"
 done
