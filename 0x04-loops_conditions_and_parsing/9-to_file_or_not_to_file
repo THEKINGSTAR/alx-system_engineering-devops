@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bash script that gives you information about the school file.
+if [ -f ./school ]
+then
+echo "school file exists"
+elif [ ! -f ./school ]
+then
+echo "school file does not exist"
+elif [ ! -d ./school ]
+then
+echo "school is a regular file"
+fi
