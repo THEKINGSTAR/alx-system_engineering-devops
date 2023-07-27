@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This is script to display "best school" 10 time and at 9th time "hi"
+i=1
+while [ $i -le 10 ]
+do
+	echo "Best School"
+	((i++))
+	if [[ $i -eq 4 ]]
+	then
+	echo "bad luck"
+	((i++))
+	elif [[ $i -eq 8 ]]
+	then
+	echo "good luck"
+	((i++))
+	fi
+done
