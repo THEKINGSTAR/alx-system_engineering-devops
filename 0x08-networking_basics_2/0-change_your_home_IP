@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
+# Bash script that configures an Ubuntu server with the below requirements.
+cp /etc/hosts ~/hosts.new
+sed -i 's/localhost/127.0.0.2/' ~/hosts.new
+sed -i 's/facebook.com/8.8.8.8/' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
+
+#sed -i s/^localhost$/127.0.0.2/ ~/hosts.new
 
