@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # BASH SCRIPT TO Install nginx web server
-
+# AND
 # Configure your Nginx server so that
 # /redirect_me is redirecting to another page.
 
@@ -10,7 +10,17 @@ sudo apt-get install nginx -y
 # Nginx should be listening on port 80
 sudo ufw allow 'Nginx HTTP'
 
-echo "301 Moved Permanently" | sudo tee /var/www/redirect_me
+sudo mkdir -p /var/www/html/redirected
+echo "<html><body>301 Moved Permanently</body></html>" | sudo tee /var/www/html/redirected/redirected.html
+
+
+echo "server {
+    listen 80;
+    server_name _;
+    location /redirect_me {
+        return 301 
+    }
+}" | sudo tee /etc/nginx/sites-available/redirected
 
 sudo service nginx restart
 sudo service nginx reload
