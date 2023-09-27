@@ -2,6 +2,7 @@
 # BASH SCRIPT TO Install nginx web server
 
 sudo apt-get install nginx -y
+sudo ufw 'Nginx HTTP '
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
