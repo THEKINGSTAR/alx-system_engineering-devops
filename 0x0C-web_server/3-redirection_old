@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# BASH SCRIPT TO Install nginx web server
+# AND
+# Configure your Nginx server so that
+# /redirect_me is redirecting to another page.
+
+sudo apt-get update
+sudo apt-get install nginx -y
+
+# Nginx should be listening on port 80
+sudo ufw allow 'Nginx HTTP'
+
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+
+replace="location /redirect_me {\n\trewrite ^/redirect_me$ http://example.com/new-page permanent;\n}"
+
+sudo sed -i "/server_name _;/a $replace" /etc/nginx/sites-available/default
+
+sudo service nginx restart
+sudo service nginx reload

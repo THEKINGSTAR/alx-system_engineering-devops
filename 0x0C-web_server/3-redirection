@@ -4,23 +4,30 @@
 # Configure your Nginx server so that
 # /redirect_me is redirecting to another page.
 
+
 sudo apt-get update
 sudo apt-get install nginx -y
 
-# Nginx should be listening on port 80
 sudo ufw allow 'Nginx HTTP'
 
-sudo mkdir -p /var/www/html/redirected
-echo "<html><body>301 Moved Permanently</body></html>" | sudo tee /var/www/html/redirected/redirected.html
 
+sudo mkdir -p /var/www/html/redirected
+
+
+echo "<html><body>301 Moved Permanently</body></html>" | sudo tee /var/www/html/redirected/redirected.html
 
 echo "server {
     listen 80;
     server_name _;
     location /redirect_me {
-        return 301 
+        return 301 http://example.com;  # Replace with the desired URL
     }
 }" | sudo tee /etc/nginx/sites-available/redirected
 
-sudo service nginx restart
-sudo service nginx reload
+
+#sudo ln -s /etc/nginx/sites-available/redirected /etc/nginx/sites-enabled/
+
+
+sudo nginx -t
+
+udo service nginx restart
