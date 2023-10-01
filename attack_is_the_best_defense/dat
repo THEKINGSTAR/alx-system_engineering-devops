@@ -1,0 +1,100 @@
+04:27:56.763255 IP 192.168.132.52.46114 > KING-PC.mshome.net.domain: 28575+ A? smtp.sendgrid.net. (35)
+04:27:56.763260 IP 192.168.132.52.46114 > KING-PC.mshome.net.domain: 24989+ AAAA? smtp.sendgrid.net. (35)
+04:27:56.832462 IP 192.168.132.52.46572 > KING-PC.mshome.net.domain: 9340+ PTR? 1.128.168.192.in-addr.arpa. (44)
+04:27:56.833379 IP KING-PC.mshome.net.domain > 192.168.132.52.46572: 9340- 1/0/0 PTR KING-PC.mshome.net. (102)
+04:27:56.833472 IP 192.168.132.52.58335 > KING-PC.mshome.net.domain: 14812+ PTR? 52.132.168.192.in-addr.arpa. (45)
+04:27:56.834984 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:56.835604 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:56.906193 IP KING-PC.mshome.net.domain > 192.168.132.52.46114: 28575- 4/0/0 A 18.197.194.208, A 52.57.139.126, A 54.228.39.88, A 108.128.229.184 (116)
+04:27:56.916175 IP KING-PC.mshome.net.domain > 192.168.132.52.46114: 24989 0/0/0 (35)
+04:27:56.919158 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [S], seq 2875339511, win 64240, options [mss 1460,sackOK,TS val 3992204996 ecr 0,nop,wscale 7], length 0
+04:27:56.970677 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:56.971071 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:56.991230 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [S.], seq 2741023352, ack 2875339512, win 31856, options [mss 1400,sackOK,TS val 1111009599 ecr 3992204996,nop,wscale 9], length 0
+04:27:56.991253 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 1, win 502, options [nop,nop,TS val 3992205068 ecr 1111009599], length 0
+04:27:56.991341 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 1:37, ack 1, win 502, options [nop,nop,TS val 3992205068 ecr 1111009599], length 36
+04:27:57.058249 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 1, win 63, options [nop,nop,TS val 1111009669 ecr 3992205068], length 0
+04:27:57.058249 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [P.], seq 1:48, ack 1, win 63, options [nop,nop,TS val 1111009669 ecr 3992205068], length 47
+04:27:57.058272 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 48, win 502, options [nop,nop,TS val 3992205135 ecr 1111009669], length 0
+04:27:57.073014 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 37, win 63, options [nop,nop,TS val 1111009673 ecr 3992205068], length 0
+04:27:57.073014 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [P.], seq 48:178, ack 37, win 63, options [nop,nop,TS val 1111009673 ecr 3992205068], length 130
+04:27:57.073039 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 178, win 501, options [nop,nop,TS val 3992205150 ecr 1111009673], length 0
+04:27:57.826914 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:57.827275 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 52.132.168.192.in-addr.arpa.local. (51)
+04:27:57.971775 IP KING-PC.mshome.net.domain > 192.168.132.52.58335: 14812* 1/0/0 PTR 192.168.132.52. (73)
+04:27:57.972147 IP 192.168.132.52.37312 > KING-PC.mshome.net.domain: 49456+ PTR? 251.0.0.224.in-addr.arpa. (42)
+04:27:57.973872 IP KING-PC.mshome.net.domain > 192.168.132.52.37312: 49456- 1/0/0 PTR mdns.mcast.net. (94)
+04:27:57.974207 IP 192.168.132.52.56140 > KING-PC.mshome.net.domain: 38194+ PTR? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+04:27:57.977650 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa.local. (96)
+04:27:57.978594 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa.local. (96)
+04:27:58.113150 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa.local. (96)
+04:27:58.113469 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa.local. (96)
+04:27:58.762597 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 37:49, ack 178, win 501, options [nop,nop,TS val 3992206839 ecr 1111009673], length 12
+04:27:58.832431 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 49, win 63, options [nop,nop,TS val 1111011442 ecr 3992206839], length 0
+04:27:58.832431 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [P.], seq 178:196, ack 49, win 63, options [nop,nop,TS val 1111011442 ecr 3992206839], length 18
+04:27:58.832450 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 196, win 501, options [nop,nop,TS val 3992206909 ecr 1111011442], length 0
+04:28:00.763480 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 49:63, ack 196, win 501, options [nop,nop,TS val 3992208840 ecr 1111011442], length 14
+04:28:00.831334 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 63, win 63, options [nop,nop,TS val 1111013443 ecr 3992208840], length 0
+04:28:00.831334 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [P.], seq 196:214, ack 63, win 63, options [nop,nop,TS val 1111013443 ecr 3992208840], length 18
+04:28:00.831354 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 214, win 501, options [nop,nop,TS val 3992208908 ecr 1111013443], length 0
+04:28:02.150507 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:02.150578 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:28:02.175470 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:02.175490 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:28:02.764528 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [P.], seq 63:85, ack 214, win 501, options [nop,nop,TS val 3992210841 ecr 1111013443], length 22
+04:28:02.873711 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 85, win 63, options [nop,nop,TS val 1111015485 ecr 3992210841], length 0
+04:28:03.009662 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [P.], seq 214:266, ack 85, win 63, options [nop,nop,TS val 1111015618 ecr 3992210841], length 52
+04:28:03.009662 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [F.], seq 266, ack 85, win 63, options [nop,nop,TS val 1111015618 ecr 3992210841], length 0
+04:28:03.009678 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [.], ack 266, win 501, options [nop,nop,TS val 3992211086 ecr 1111015618], length 0
+04:28:03.009807 IP 192.168.132.52.60750 > ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission: Flags [F.], seq 85, ack 267, win 501, options [nop,nop,TS val 3992211086 ecr 1111015618], length 0
+04:28:03.079760 IP ec2-18-197-194-208.eu-central-1.compute.amazonaws.com.submission > 192.168.132.52.60750: Flags [.], ack 86, win 63, options [nop,nop,TS val 1111015692 ecr 3992211086], length 0
+04:28:05.163064 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:05.163089 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:28:05.187231 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:05.187254 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:28:06.797593 ARP, Request who-has 192.168.132.52 (00:15:5d:34:b1:6d (oui Unknown)) tell KING-PC.mshome.net, length 28
+04:28:06.797707 ARP, Reply 192.168.132.52 is-at 00:15:5d:34:b1:6d (oui Unknown), length 28
+04:28:08.174175 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:08.174427 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:28:08.200718 IP KING-PC.mshome.net.domain > 192.168.132.52.56140: 38194 NXDomain 0/1/0 (154)
+04:28:08.200738 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 56140 unreachable, length 190
+04:29:26.332497 IP KING-PC.mshome.net.50638 > 239.255.255.250.1900: UDP, length 175
+04:29:26.411065 IP 192.168.132.52.50901 > KING-PC.mshome.net.domain: 30059+ PTR? 250.255.255.239.in-addr.arpa. (46)
+04:29:26.421753 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:26.422564 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:26.567576 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:26.568015 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:27.333957 IP KING-PC.mshome.net.50638 > 239.255.255.250.1900: UDP, length 175
+04:29:27.429070 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:27.429557 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:27.567765 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:27.568152 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? 250.255.255.239.in-addr.arpa.local. (52)
+04:29:27.641558 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:27.670296 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:27.670319 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:28.347561 IP KING-PC.mshome.net.50638 > 239.255.255.250.1900: UDP, length 175
+04:29:29.355810 IP KING-PC.mshome.net.50638 > 239.255.255.250.1900: UDP, length 175
+04:29:30.612409 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:30.612430 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:30.639332 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:30.639352 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:31.430776 ARP, Request who-has KING-PC.mshome.net tell 192.168.132.52, length 28
+04:29:31.430957 ARP, Reply KING-PC.mshome.net is-at 00:15:5d:0d:88:1b (oui Unknown), length 28
+04:29:32.285413 ARP, Request who-has 192.168.132.52 (00:15:5d:34:b1:6d (oui Unknown)) tell KING-PC.mshome.net, length 28
+04:29:32.285423 ARP, Reply 192.168.132.52 is-at 00:15:5d:34:b1:6d (oui Unknown), length 28
+04:29:33.617910 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:33.617932 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:33.657812 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:33.657832 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:36.622303 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:36.622329 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:36.648377 IP KING-PC.mshome.net.domain > 192.168.132.52.50901: 30059 NXDomain 0/1/0 (103)
+04:29:36.648398 IP 192.168.132.52 > KING-PC.mshome.net: ICMP 192.168.132.52 udp port 50901 unreachable, length 139
+04:29:39.888298 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QU)? _microsoft_mcc._tcp.local. (43)
+04:29:39.888747 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QU)? _microsoft_mcc._tcp.local. (43)
+04:29:40.893287 IP KING-PC.mshome.net.mdns > mdns.mcast.net.mdns: 0 PTR (QM)? _microsoft_mcc._tcp.local. (43)
+04:29:40.893776 IP6 KING-PC.mdns > ff02::fb.mdns: 0 PTR (QM)? _microsoft_mcc._tcp.local. (43)
+04:31:26.339914 IP KING-PC.mshome.net.54946 > 239.255.255.250.1900: UDP, length 175
+04:31:27.340418 IP KING-PC.mshome.net.54946 > 239.255.255.250.1900: UDP, length 175
+04:31:28.340639 IP KING-PC.mshome.net.54946 > 239.255.255.250.1900: UDP, length 175
+04:31:29.341163 IP KING-PC.mshome.net.54946 > 239.255.255.250.1900: UDP, length 175
