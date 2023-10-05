@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #1. Make it sweet and short
-sudo apt-get update
-sudo apt-get install nginx -y
 sudo ufw allow 'Nginx HTTP'
 sudo sed -i '/server_name _;/a listen 80;' /etc/nginx/sites-available/default
 sudo systemctl restart nginx
-
