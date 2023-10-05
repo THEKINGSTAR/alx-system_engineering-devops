@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-#0. Nginx likes port 80
+#1. Make it sweet and short
 sudo apt-get update
 sudo apt-get install nginx -y
-
 sudo ufw allow 'Nginx HTTP'
 sudo sed -i '/server_name _;/a listen 80;' /etc/nginx/sites-available/default
-sudo nginx -t
 sudo systemctl restart nginx
 
