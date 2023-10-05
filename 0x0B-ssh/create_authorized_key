@@ -1,0 +1,29 @@
+- To create an authorized_keys file on a Linux system, you can follow these steps:
+
+- Generate an SSH key pair on your local computer using the ssh-keygen command1.
+
+-- This will create two files: 
+
+- a public key file (usually named id_rsa.pub)
+- and
+- a private key file (usually named id_rsa).
+
+- Create the .ssh directory if it doesn’t exist already2:
+
+mkdir ~/.ssh
+
+- Set the correct permissions for the .ssh directory2:
+
+chmod 700 ~/.ssh
+
+- Create the authorized_keys file within the .ssh directory2:
+
+touch ~/.ssh/authorized_keys
+
+- Add the contents of your public key (id_rsa.pub) to the end of the authorized_keys file1:
+
+echo public_key_string >> ~/.ssh/authorized_keys
+
+- Replace public_key_string with the output from the 
+
+cat ~/.ssh/id_rsa.pub command that you executed on your local system.
