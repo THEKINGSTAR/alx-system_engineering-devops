@@ -9,9 +9,9 @@ sudo ufw allow 'Nginx HTTP'
 
 #echo "Hello World!" | sudo tee /var/www/html/index.html
 
-sed -i '0,/listen [0-9]*;/s//listen 80;\n&/' /etc/nginx/nginx.conf
+sudo sed -i '0,/listen [0-9]*;/s//listen 80;\n&/' /etc/nginx/nginx.conf
 # sed -i 's/listen.*ssl; *ssl_certificate/listen 80;listen 6666;listen 8888;listen 443 ssl;ssl_certificate/' /etc/nginx/nginx.conf
-docker run -it -p 8080:80 nginx
+#docker run -it -p 8080:80 nginx
 
 sudo systemctl restart nginx
 sudo service nginx restart
