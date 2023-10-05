@@ -1,4 +1,18 @@
 #!/usr/bin/env bash
 #0. Nginx likes port 80
+
+sudo apt-get update
+sudo apt-get install nginx -y
+
+# Nginx should be listening on port 80
+sudo ufw allow 'Nginx HTTP'
+
+#echo "Hello World!" | sudo tee /var/www/html/index.html
+
+
 docker run -it -p 8080:80 nginx
+
 sudo systemctl restart nginx
+sudo service nginx restart
+sudo service nginx reload
+
