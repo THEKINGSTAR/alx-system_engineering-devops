@@ -3,6 +3,6 @@
 
 eval $("ssh-agent")
 
-ssh-add ~/.ssh/school
+ssh-add ~/root/.ssh/school
 
-ssh ubuntu@54.89.60.84
+ssh ubuntu@35.175.128.63
