@@ -10,9 +10,19 @@ sudo apt-get install nginx -y
 
 sudo ufw allow 'Nginx HTTP'
 
+# Make directory to host the new page redirected to
+sudo mkdir -p /etc/nginx/sites-available/redirected
 
-sudo mkdir -p /var/www/html/redirected
+#TO CHANGE SENTENCE IN FILE WITH SPECIAL CHARACTER '/' USE ANY SCICIAL NOT BEING USED LIKE '@'
+# sed -i 's/ /g'
+# 's/ /' SUBISTITUEM
+# -i  CHANGE THE FILE IN PLACE
+# '/ /g' CHANGE GLOBAL IN ALL ACCURED IN THE FILE
+#sed -i 's@/var/www/html@' /etc/nginx/sites-avilable/default #<<- DIRECTORY OF THE FILE
 
+#USING SED TO DELETE ALL NOT NECECERY COMMANDS
+# -i  CHANGE THE FILE IN PLACE
+sudo sed -i '/^\W*#.*/d' /etc/nginx/sites-available/default
 
 echo "<html><body>301 Moved Permanently</body></html>" | sudo tee /var/www/html/redirected/redirected.html
 
@@ -20,7 +30,7 @@ echo "server {
     listen 80;
     server_name _;
     location /redirect_me {
-        return 301 http://example.com;  # Replace with the desired URL
+        return 301 /var/www/html/redirected/redirected.html   # Replace with the desired URL
     }
 }" | sudo tee /etc/nginx/sites-available/redirected
 
