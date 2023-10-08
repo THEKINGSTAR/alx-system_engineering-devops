@@ -5,4 +5,5 @@
 #The created key must be protected by the passphrase betty
 
 sudo mkdir -p ~/.ssh
-sudo ssh-keygen -t rsa -b 4096 -P betty -f ~/.ssh/school
+sudo ssh-keygen -t rsa -b 4096 -P betty -f school
+#sudo ssh-keygen -t rsa -b 4096 -P betty -f ~/.ssh/school
