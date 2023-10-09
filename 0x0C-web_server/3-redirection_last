@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# BASH SCRIPT TO Install nginx web server
+# AND
+# Configure your Nginx server so that
+# /redirect_me is redirecting to another page.
+
+
+sudo apt-get update
+sudo apt-get install nginx -y
+
+sudo ufw allow 'Nginx HTTP'
+
+# Make directory to host the new page redirected to
+sudo mkdir -p /etc/nginx/sites-enabled/redirect_me
+sudo mkdir -p /etc/nginx/sites-available/redirect_me
+
+#TO CHANGE SENTENCE IN FILE WITH SPECIAL CHARACTER '/' USE ANY SCICIAL NOT BEING USED LIKE '@'
+# sed -i 's/ /g'
+# 's/ /' SUBISTITUEM
+# -i  CHANGE THE FILE IN PLACE
+# '/ /g' CHANGE GLOBAL IN ALL ACCURED IN THE FILE
+#sed -i 's@/var/www/html@' /etc/nginx/sites-avilable/default #<<- DIRECTORY OF THE FILE
+
+#USING SED TO DELETE ALL NOT NECECERY COMMANDS
+# -i  CHANGE THE FILE IN PLACE
+sudo sed -i '/^\W*#.*/d' /etc/nginx/sites-available/default
+
+echo "301 Moved Permanently" | sudo tee /var/www/html/redirect_me/redirect_me.html
+
+
+#echo "301 Moved Permanently" | sudo tee /var/www/html/redirect_me/redirect_me.html
+
+echo "server {
+    listen 80;
+    server_name redirect_me;
+    location /redirect_me {
+        return 301 /redirect_me/redirect_me.html;
+    }
+}" | sudo tee /etc/nginx/sites-available/redirect_me/redirect_me.html
+
+sudo ln -s /etc/nginx/sites-available/redirect_me /etc/nginx/sites-enabled/
+
+
+sudo nginx -t
+
+sudo service nginx restart
+sudo systemctl restart nginx
