@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #1. Make it sweet and short
 sudo ufw allow 'Nginx HTTP'
-sudo sed -i '/server_name _;/a listen 80;' /etc/nginx/sites-available/default
-sudo systemctl restart nginx
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo systemctl stop nginx
