@@ -5,7 +5,10 @@
 #using sed to append the configurato in the rules configuration file
 #sudo sed -i '/^*filter$/a  *nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80\nCOMMIT' /etc/ufw/before.rules
 
-sudo ufw enable -y
+
+sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+sudo apt-get install iptables-persistent
+sudo iptables-save | /etc/iptables/rules.v4
 
 sudo sed -i '/^*nat$/a :PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80' /etc/ufw/before.rules
 
