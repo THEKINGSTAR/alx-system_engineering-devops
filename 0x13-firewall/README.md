@@ -21,7 +21,7 @@
 ## More Info
 >- As explained in the web stack debugging guide concept page, ```telnet``` is a very good tool to check if sockets are open with ```telnet IP PORT```. For example, if you want to check if port 22 is open on ```web-02```:
 
-```sh
+```bash
 sylvain@ubuntu$ telnet web-02.holberton.online 22
 Trying 54.89.38.100...
 Connected to web-02.holberton.online.
@@ -36,7 +36,7 @@ sylvain@ubuntu$
 
 >- Now let’s try connecting to port 2222:
 
-```sh
+```bash
 sylvain@ubuntu$ telnet web-02.holberton.online 2222
 Trying 54.89.38.100...
 ^C
@@ -81,7 +81,7 @@ sylvain@ubuntu$
 
 >- Terminal in ```web-01```:
 
-```sh
+```bash
 root@03-web-01:~# netstat -lpn
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -112,7 +112,7 @@ root@03-web-01:~#
 >- ```netstat``` shows that nothing is listening on ```8080```
 
 >- Terminal in ```web-02```:
-```sh
+```bash
 ubuntu@03-web-02:~$ curl -sI web-01.holberton.online:80
 HTTP/1.1 200 OK
 Server: nginx/1.4.6 (Ubuntu)
