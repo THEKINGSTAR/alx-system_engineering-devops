@@ -3,6 +3,10 @@
 # Configure web-01 so that its firewall redirects port 8080/TCP to port 80/TCP.
 
 #using sed to append the configurato in the rules configuration file
-sudo sed -i '/^*filter&/a  *nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80\nCOMMIT' /etc/ufw/before.rules
+#sudo sed -i '/^*filter$/a  *nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80\nCOMMIT' /etc/ufw/before.rules
+
+sudo ufw enable -y
+
+sudo sed -i '/^*nat$/a :PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80' /etc/ufw/before.rules
 
 ufw reload
