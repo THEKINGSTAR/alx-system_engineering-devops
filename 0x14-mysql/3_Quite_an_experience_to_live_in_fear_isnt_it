@@ -1,0 +1,11 @@
+CREATE USER  'replica_user'@'%' IDENTIFIED BY 'replica_user_p@ssw0rd';
+
+
+GRANT REPLICATION CLIENT ON *.* TO 'replica_user'@'%';
+GRANT SELECT ON *.* TO 'holberton_user'@'localhost';
+GRANT REPLICATION SLAVE ON *.* TO 'replica_user'@'%';
+FLUSH PRIVILEGES;
+
+SELECT user, Repl_slave_priv FROM mysql.user;
+
+
