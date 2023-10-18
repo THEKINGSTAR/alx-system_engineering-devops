@@ -8,8 +8,8 @@ CHANGE MASTER TO
 CHANGE MASTER TO
   MASTER_HOST = '100.27.11.238',
   MASTER_USER = 'replica_user',
-  MASTER_PASSWORD = 'replica_user_password',
-  MASTER_LOG_FILE = 'mysql-bin',
+  MASTER_PASSWORD = 'replica_user',
+  MASTER_LOG_FILE = 'mysql-bin.000012',
   MASTER_LOG_POS = 107;
 
 
@@ -18,3 +18,8 @@ SELECT user, host FROM mysql.user WHERE user = 'root';
 
 
 sudo mysql -h 100.27.11.238 -u replica_user -p
+
+
+sudo ufw allow 3306/tcp
+
+telnet 100.27.11.238 3306
