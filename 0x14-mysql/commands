@@ -1,13 +1,7 @@
-CHANGE REPLICATION SOURCE TO
-SOURCE_HOST='100.27.11.238',
-SOURCE_USER='replica_user',
-SOURCE_PASSWORD='replica_user_password',
-SOURCE_LOG_FILE='mysql-bin.000001',
-SOURCE_LOG_POS=899;
+CHANGE MASTER TO
+  MASTER_HOST = '100.27.11.238',
+  MASTER_USER = 'replica_user',
+  MASTER_PASSWORD = 'replica_user_password',
+  MASTER_LOG_FILE = 'mysql-bin.000010',
+  MASTER_LOG_POS = 107;
 
-
-
-CHANGE REPLICATION SOURCE TO
-SOURCE_HOST='source_server_ip',
-SOURCE_USER='replica_user',
-SOURCE_PASSWORD='password';
