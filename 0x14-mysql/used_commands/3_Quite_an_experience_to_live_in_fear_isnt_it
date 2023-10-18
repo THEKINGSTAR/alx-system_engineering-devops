@@ -8,4 +8,7 @@ FLUSH PRIVILEGES;
 
 SELECT user, Repl_slave_priv FROM mysql.user;
 
+GRANT REPLICATION SLAVE ON *.* TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
 
+GRANT SELECT ON mysql.user TO 'holberton_user'@'localhost';

@@ -1,6 +1,8 @@
 CREATE DATABASE IF NOT EXISTS tyrell_corp;
 CREATE TABLE tyrell_corp.nexus6 (id INT, name VARCHAR(255));
 GRANT SELECT ON tyrell_corp.nexus6 TO 'holberton_user'@'localhost';
+GRANT REPLICATION SLAVE ON *.* TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
 
 use tyrell_corp
 
