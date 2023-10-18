@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-#bash script
+#bash script to configure master server
+
+sudo ufw allow from 34.207.189.112 to any port 3306
