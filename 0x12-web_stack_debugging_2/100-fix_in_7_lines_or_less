@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# Bash script that accepts one argument
+sudo useradd nginx
+sudo usermod -aG nginx nginx
+sudo chown -R nginx:nginx /var/log/nginx /var/lib/nginx /etc/nginx/
+sudo chmod -R 644 /etc/nginx/
+sudo systemctl restart nginx
