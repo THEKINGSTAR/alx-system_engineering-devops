@@ -4,10 +4,28 @@
 #nginx must be running as nginx user
 #nginx must be listening on all active IPs on port 8080
 
-user="nginx"
+#https://stackoverflow.com/questions/42329261/running-nginx-as-non-root-user#:~:text=In%20order%20for%20the%20master%20nginx%20process%20to,%2Fetc%2Fnginx%2Fnginx.conf%20file%20to%20give%20it%20read%20permission%20%28644%29.
+#change ownership of the /etc/nginx directory to be owned by the said user.
+#change ownership of the /var/log/nginx to be owned by same user.
+#Update the /etc/nginx/nginx.conf file to give it read permission (644)
 
+sudo systemctl stop nginx
+# Create the nginx user (if it doesn't exist)
+sudo useradd nginx
 
-sudo -u "$user" nginx
+# Add the nginx user to the nginx group
+sudo usermod -aG nginx nginx
 
+# Change ownership of the necessary directories and files
+sudo chown -R nginx:nginx /var/log/nginx /var/lib/nginx /etc/nginx/
+
+# Change permissions for configuration files in /etc/nginx (you might want to use 644 for files)
+sudo chmod -R 644 /etc/nginx/
+
+# Restart the Nginx service to apply the changes
+sudo systemctl restart nginx
+
+#user="nginx"
+#sudo -u "$user" nginx
 #sudo nginx -t
 #sudo systemctl restart nginx
