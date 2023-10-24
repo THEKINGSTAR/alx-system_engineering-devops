@@ -5,10 +5,10 @@ for a given employee ID,
 returns information about his/her TODO list progress.
 """
 
+import json
 import sys
 import urllib
 import urllib.request
-import json
 
 
 def use_rest_api(input):
@@ -53,7 +53,7 @@ def use_rest_api(input):
 
     for to_do in todo_lsit:
         if (to_do["completed"]):
-            print(f"\t{to_do['title']}")
+            print(f"\t {to_do['title']}")
 
 
 if __name__ == "__main__":
