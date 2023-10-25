@@ -1,5 +1,11 @@
-import json
-import requests
+#!/usr/bin/python3
+"""
+Python script to export data in the JSON format.
+"""
+
+import sys
+import urllib
+import urllib.request
 
 
 def fetch_all_tasks():
