@@ -80,7 +80,8 @@ def use_rest_api(input):
             for tsk in todo_lsit:
                 # print(tsk)
                 file.write(f"\"{tsk['userId']}\",")
-                file.write(f"\"{EMP_NAME}\",")
+                EMP_USR_NAME = usr_data.get("username")
+                file.write(f"\"{EMP_USR_NAME}\",")
                 file.write(f"\"{tsk['completed']}\",")
                 file.write(f"\"\"{tsk['title']}\"\n")
     except Exception as e:
