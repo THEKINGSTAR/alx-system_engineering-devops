@@ -83,7 +83,7 @@ def use_rest_api(input):
                 EMP_USR_NAME = usr_data.get("username")
                 file.write(f"\"{EMP_USR_NAME}\",")
                 file.write(f"\"{tsk['completed']}\",")
-                file.write(f"\"\"{tsk['title']}\"\n")
+                file.write(f"\"{tsk['title']}\"\n")
     except Exception as e:
         print(f"ERRORE IN WRITE TO FILE : {e}")
 
