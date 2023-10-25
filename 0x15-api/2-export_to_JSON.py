@@ -100,6 +100,8 @@ def use_rest_api(input):
                 USER_TASKS["completed"] = (f"{tsk['completed']}")
                 USER_TASKS["username"] = (f"{EMP_USR_NAME}")
                 TASK_LIST.append(USER_TASKS)
+                # print(f"USER TASKS ======= {USER_TASKS}\n")
+                # print(f"TAKS LISTS ####### {TASK_LIST}\n")
             USER[id] = TASK_LIST
             json.dump(USER, file)
     except Exception as e:
