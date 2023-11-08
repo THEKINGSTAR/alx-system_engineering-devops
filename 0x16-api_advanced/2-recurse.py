@@ -7,11 +7,11 @@ import json
 import requests
 
 
-def top_ten(subreddit):
+def recurse(subreddit, hot_list=[]):
     """
-    function that queries the Reddit API
-    and
-    prints the titles of the first 10 hot posts listed for a given subreddi
+    returns the number of subscribers (not active users, total subscribers)
+    for a given subreddit.
+    If an invalid subreddit is given, the function should return 0
     """
     try:
         """
@@ -39,14 +39,13 @@ def top_ten(subreddit):
         if response.status_code == 200:
             data = response.json()
             top = data['data']['children']
-            posts = []
             for post in data['data']['children']:
                 x = post['data']['title']
-                print(x)
-                posts.append(x)
-            # print(posts)
+                # print(x)
+                hot_list.append(x)
+            return (hot_list)
         else:
-            print(None)
+            return (None)
     except Exception as e:
         # print(e)
         return (0)
